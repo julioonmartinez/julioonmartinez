@@ -1,0 +1,139 @@
+<div class="home-page-container">
+    <header>
+        <div class="content-photo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/julioonmartinez-83a75.firebasestorage.app/o/black.jpg?alt=media&token=60b9e754-665f-4ce4-b8dc-36633b6775f4" alt="">
+        </div>
+        <h1 class="title" >Julioon Martinez</h1>
+        <p class="subtitle" >Transformando datos en insights significativos</p>
+        <div class="actions-header">
+            <button (click)="scrollToSection('projects')" class="btn btn-projects" >
+                <i class="fas fa-code"></i>
+                Projectos
+            </button>
+
+            <button (click)="scrollToSection('articles')" class="btn btn-articles" >
+                <i class="fas fa-code"></i>
+                Data VIZ
+            </button>
+
+            <button (click)="scrollToSection('skills')" class="btn btn-habilities" >
+                <i class="fas fa-code"></i>
+               Habilidades
+            </button>
+         </div>
+    </header>
+    <section class="socila-media-links" >
+        <a href="https://x.com/Julioonmartinez" target="_blank" class="content-link">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/>
+            <p>{{'@JulioonMartinez'}} </p>
+        </a>
+
+        
+        <a href="https://www.instagram.com/julioon.data" target="_blank" class="content-link">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="instagram-new--v1"/>
+            <p>{{'@Juliion'}} </p>
+        </a>
+
+        <a class="content-link">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/>
+            <p>{{'@JuliionMartinez'}} </p>
+        </a>
+
+
+        <!-- <a class="content-link">
+            <img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/area-chart.png" alt="area-chart"/>
+            <p>{{'@JuliionMar'}} </p>
+        </a> -->
+
+    </section>
+    <section id="projects" class="projects" >
+        <!-- <h2>Proyectos destacados</h2> -->
+         <p class="title-section" >
+            <i class="fa fa-code" ></i>
+            Projectos</p>
+        <div class="projects-grid">
+            @for (project of projects; track $index) {
+                <div class="project-card">
+                    <div class="container-image">
+                        <img src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain" alt="">
+
+                    </div>
+                    <div class="container-card">
+                        <p class="title-card" >{{project.title}}</p>
+                        <div class="technologies">
+                            @for (tech of project.technologies; track $index) {
+                                <span class="tech-tag" >{{tech}}</span>
+                            }
+                        </div>
+                        <p class="subtitle-card" >{{project.description}} </p>
+                    </div>
+                    <div class="actions-card">
+                        <button class="btn-go" >
+                            <i class="fas fa-rocket"></i>
+                            <span class="text" >Go!</span>    
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <section id="articles" class="articles" >
+        <!-- <h2>Proyectos destacados</h2> -->
+         <p class="title-section" >
+            <i class="fa fa-newspaper" ></i>
+            Data Viz</p>
+        <div class="articles-grid">
+            @for (article of articles; track $index) {
+                <div class="project-card">
+                    <div class="container-image">
+                        <img src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain" alt="">
+
+                    </div>
+                   <div class="side-card">
+                    <div class="container-card">
+                        <p class="title-card" >{{article.title}}</p>
+                        <div class="technologies">
+                            @for (tech of article.technologies; track $index) {
+                                <span class="tech-tag" >{{tech}}</span>
+                            }
+                        </div>
+                        <p class="subtitle-card" >{{article.description}} </p>
+                    </div>
+                    <div class="actions-card">
+                        <button class="btn-go" >
+                            <i class="fas fa-rocket"></i>
+                            <span class="text" >Go!</span>    
+                        </button>
+                    </div>
+                   </div>
+                </div>
+            }
+        </div>
+    </section> 
+    <section id="skills" class="skills" >
+        <p class="title-section" >
+            <i class="fa fa-clock" ></i>
+            Habilities
+        </p>
+        <div class="skill-grid">
+            @for (skill of skills; track $index) {
+                <div class="skills-card">
+                    <div class="header-card">
+                        <img src="https://static-00.iconduck.com/assets.00/file-type-angular-icon-1907x2048-tobdkjt1.png" alt="">
+                    </div>
+                    <div class="content-side">
+                        <p class="title" >{{skill.name}} </p>
+                        <div class="progress-bar"></div>
+                        <div class="list-projects">
+                            @for (links of skill.linksProjects; track $index) {
+                                <button class="link"  >{{links.name}}</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </section>
+</div>
