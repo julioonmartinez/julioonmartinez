@@ -11,13 +11,13 @@
                 Projectos
             </button>
 
-            <button (click)="scrollToSection('articles')" class="btn btn-articles" >
-                <i class="fas fa-code"></i>
+            <button (click)="scrollToSection('data-viz')" class="btn btn-articles" >
+                <i class="fas fa-newspaper"></i>
                 Data VIZ
             </button>
 
             <button (click)="scrollToSection('skills')" class="btn btn-habilities" >
-                <i class="fas fa-code"></i>
+                <i class="fas fa-clock"></i>
                Habilidades
             </button>
          </div>
@@ -31,19 +31,18 @@
         
         <a href="https://www.instagram.com/julioon.data" target="_blank" class="content-link">
             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-            <p>{{'@Juliion'}} </p>
+            <p>{{'@Julioon.Data'}} </p>
         </a>
 
-        <a class="content-link">
+        <a href="https://github.com/julioonmartinez" target="_blank" class="content-link">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+            <p>{{'@julioonMartinez'}} </p>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/julio-martinez-515690319/" target="_blank"  class="content-link">
             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/>
-            <p>{{'@JuliionMartinez'}} </p>
+            <p>{{'@Julio Martinez'}} </p>
         </a>
-
-
-        <!-- <a class="content-link">
-            <img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/area-chart.png" alt="area-chart"/>
-            <p>{{'@JuliionMar'}} </p>
-        </a> -->
 
     </section>
     <section id="projects" class="projects" >
@@ -55,7 +54,7 @@
             @for (project of projects; track $index) {
                 <div class="project-card">
                     <div class="container-image">
-                        <img src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain" alt="">
+                        <img [src]="project.urlImage" alt="">
 
                     </div>
                     <div class="container-card">
@@ -66,47 +65,50 @@
                             }
                         </div>
                         <p class="subtitle-card" >{{project.description}} </p>
+                        <div class="actions-card">
+                            <button [routerLink]="['/project', project.id]" class="btn-go" >
+                                <i class="fas fa-rocket"></i>
+                                <span class="text" >Go!</span>    
+                            </button>
+                        </div>
                     </div>
-                    <div class="actions-card">
-                        <button class="btn-go" >
-                            <i class="fas fa-rocket"></i>
-                            <span class="text" >Go!</span>    
-                        </button>
-                    </div>
+                    
                 </div>
             }
         </div>
     </section>
 
-    <section id="articles" class="articles" >
+    <section id="data-viz" class="data-viz" >
         <!-- <h2>Proyectos destacados</h2> -->
          <p class="title-section" >
             <i class="fa fa-newspaper" ></i>
             Data Viz</p>
-        <div class="articles-grid">
-            @for (article of articles; track $index) {
-                <div class="project-card">
-                    <div class="container-image">
-                        <img src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain" alt="">
+        <div class="data-viz-grid">
 
+            <!-- <img src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain" alt=""> -->
+
+
+            @for (viz of dataviz; track $index) {
+                <div [ngStyle]="{'background-image': 'url(' + viz.urlImage + ')'}" class="data-viz-card">
+                    <div class="header-card">
+                        
                     </div>
-                   <div class="side-card">
-                    <div class="container-card">
-                        <p class="title-card" >{{article.title}}</p>
-                        <div class="technologies">
-                            @for (tech of article.technologies; track $index) {
-                                <span class="tech-tag" >{{tech}}</span>
+                    <div class="content-card">
+                        <p class="title" >{{viz.title}}</p>
+                        <div class="content-tech">
+                            @for (tech of viz.technologies; track $index) {
+                                <span>{{tech}}</span>
+
                             }
                         </div>
-                        <p class="subtitle-card" >{{article.description}} </p>
+                        <p class="description" >{{viz.description}}</p>
+                        <div class="actions-card">
+                            <button [routerLink]="['/project', viz.id]"  class="btn-go" >
+                                <i class="fas fa-rocket"></i>
+                                <span class="text" >Go!</span>    
+                            </button>
+                        </div>
                     </div>
-                    <div class="actions-card">
-                        <button class="btn-go" >
-                            <i class="fas fa-rocket"></i>
-                            <span class="text" >Go!</span>    
-                        </button>
-                    </div>
-                   </div>
                 </div>
             }
         </div>
@@ -114,20 +116,20 @@
     <section id="skills" class="skills" >
         <p class="title-section" >
             <i class="fa fa-clock" ></i>
-            Habilities
+            Skills
         </p>
         <div class="skill-grid">
             @for (skill of skills; track $index) {
                 <div class="skills-card">
                     <div class="header-card">
-                        <img src="https://static-00.iconduck.com/assets.00/file-type-angular-icon-1907x2048-tobdkjt1.png" alt="">
+                        <img [src]="skill.urlIcon" alt="">
                     </div>
                     <div class="content-side">
                         <p class="title" >{{skill.name}} </p>
                         <div class="progress-bar"></div>
                         <div class="list-projects">
-                            @for (links of skill.linksProjects; track $index) {
-                                <button class="link"  >{{links.name}}</button>
+                            @for (links of skill.projects; track $index) {
+                                <button [routerLink]="['/project', links.id]" class="link"  >{{links.name}}</button>
                             }
                         </div>
                     </div>

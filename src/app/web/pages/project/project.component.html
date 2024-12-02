@@ -1,0 +1,39 @@
+<div class="content-project">
+    @if (project) {
+        <header class="header" >
+            <img class="image-project" [src]="project.urlImage" alt="">
+            <div class="content-icons">
+                <p class="title" >{{project.title}} </p>
+                <!-- <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/share--v1.png" alt="share--v1"/> -->
+            </div>
+        </header>
+        <section class="section-content" > 
+            <div class="info">
+                <div class="user-container">
+                    <img class="avatar" src="https://firebasestorage.googleapis.com/v0/b/julioonmartinez-83a75.firebasestorage.app/o/black.jpg?alt=media&token=60b9e754-665f-4ce4-b8dc-36633b6775f4" alt="">
+                    <p class="user" >{{project.user}} </p>
+                </div>
+                <p class="create-at" >{{project.createdAt | date: 'dd/MM/YYYY' }} </p>
+            </div>
+            <div class="content-project">
+                <p>{{project.content}}</p>
+            </div>
+
+        </section>
+        <section class="links" >
+           
+                @if (project.linksGit) {
+                    <a class="link" [href]="project.linksGit" target="_blank">
+                        <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+                    </a>
+                }
+
+                @if (project.linkWeb) {
+                    <a class="link" [href]="project.linkWeb" target="_blank">
+                        <img width="25" height="25" src="https://img.icons8.com/wired/64/domain.png" alt="domain"/>
+                    </a>
+                }
+            
+        </section>
+    }
+</div>

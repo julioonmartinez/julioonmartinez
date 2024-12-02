@@ -1,6 +1,7 @@
 import { Route } from "@angular/router";
 import { LayoutComponent } from "./components/layout/layout.component";
 import { HomeComponent } from "./pages/home/home.component";
+import { ProjectComponent } from "./pages/project/project.component";
 
 export default [
     {
@@ -8,9 +9,9 @@ export default [
         component:LayoutComponent,
         children:[
             {path:'home', component:HomeComponent},
-            {
-                path:'', redirectTo:'/home', pathMatch:'full'
-            }
+            {path:'project/:id', component:ProjectComponent},            
+            {path:'', redirectTo:'/home', pathMatch:'full'},
+            
         ]
     }
 ] as Route[];

@@ -1,0 +1,33 @@
+<nav class="toolbar">
+    <div class="toolbar-container">
+      <!-- Logo y nombre -->
+      <div class="toolbar-brand">
+        <a routerLink="/" class="brand-link">
+          <span class="brand-icon">📊</span>
+          <span class="brand-name">DataViz Portfolio</span>
+        </a>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="nav-links" [class.nav-active]="isMenuOpen">
+        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+        <a routerLink="/blog" routerLinkActive="active">Blog</a>
+        <a routerLink="/skills" routerLinkActive="active">Skills</a>
+        <a routerLink="/about" routerLinkActive="active">Sobre mí</a>
+      </div>
+
+      <!-- Botón de contacto -->
+      <div class="toolbar-actions">
+        <!-- <a href="mailto:tu@email.com" class="contact-button">
+          Contactar
+        </a> -->
+      </div>
+
+      <!-- Botón menú móvil -->
+      <button class="mobile-menu" (click)="toggleMenu()" [class.active]="isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
