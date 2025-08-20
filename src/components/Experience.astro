@@ -1,0 +1,44 @@
+---
+import { profile } from '../data/profile';
+import '../styles/components/experience.css';
+---
+
+<section class="experience">
+  <div class="container">
+    <div class="experience-header">
+      <h2 class="section-title">Experiencia Profesional</h2>
+      <p class="section-subtitle">Mi trayectoria profesional en administración y gestión operativa</p>
+    </div>
+    
+    <div class="experience-timeline">
+      {profile.experience.map((exp, index) => (
+        <div class="experience-item">
+          <div class="experience-marker">
+            <div class="marker-dot"></div>
+            {index < profile.experience.length - 1 && <div class="marker-line"></div>}
+          </div>
+          
+          <div class="experience-content">
+            <div class="experience-header-info">
+              <h3 class="company-name">{exp.company}</h3>
+              <span class="experience-period">{exp.startDate} – {exp.endDate}</span>
+            </div>
+            
+            <div class="position-info">
+              <h4 class="position-title">{exp.position}</h4>
+              <span class="location">{exp.location}</span>
+            </div>
+            
+            <ul class="experience-description">
+              {exp.description.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+

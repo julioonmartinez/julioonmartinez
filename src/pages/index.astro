@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import Experience from '../components/Experience.astro';
 import Skills from '../components/Skills.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Footer from '../components/Footer.astro';
 import { projects } from '../data/projects';
-
+import '../styles/main.css';
 // Mostrar solo los primeros 3 proyectos en la página principal
 const featuredProjects = projects.slice(0, 3);
 ---
@@ -15,7 +16,8 @@ const featuredProjects = projects.slice(0, 3);
   <Header />
   <main>
     <Hero />
-    <Skills />
+    <Experience />
+    
     
     <section class="section">
       <div class="container">
@@ -41,11 +43,11 @@ const featuredProjects = projects.slice(0, 3);
         </div>
       </div>
     </section>
+
+    <Skills />
   </main>
   
   <Footer />
 </Layout>
 
-<style>
-  @import '../styles/main.css';
-</style>
+
