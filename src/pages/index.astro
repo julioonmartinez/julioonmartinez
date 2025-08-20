@@ -1,13 +1,51 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Skills from '../components/Skills.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Footer from '../components/Footer.astro';
+import { projects } from '../data/projects';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Mostrar solo los primeros 3 proyectos en la página principal
+const featuredProjects = projects.slice(0, 3);
 ---
 
-<Layout>
-	<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<Layout title="Julio Martínez - Data Scientist" description="Data Scientist profesional especializado en machine learning, análisis de datos y visualización">
+  <Header />
+  <main>
+    <Hero />
+    <Skills />
+    
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Proyectos Destacados</h2>
+          <p class="section-subtitle">Algunos de mis trabajos más recientes en machine learning y análisis de datos</p>
+        </div>
+        
+        <div class="projects-grid">
+          {featuredProjects.map(project => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="/projects" class="btn btn-outline">
+            Ver Todos los Proyectos
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
 </Layout>
+
+<style>
+  @import '../styles/main.css';
+</style>

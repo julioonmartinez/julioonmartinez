@@ -1,0 +1,80 @@
+---
+import { profile } from '../data/profile';
+---
+
+<section class="skills-section section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Habilidades y Competencias</h2>
+      <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+    </div>
+    
+    <div class="skills-grid">
+      <div class="skills-category fade-in">
+        <h3 class="category-title">Técnicas</h3>
+        <div class="skills-list">
+          {profile.skills.technical.map(skill => (
+            <div class="skill-item">
+              <span class="skill-name">{skill}</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div class="skills-category fade-in">
+        <h3 class="category-title">Herramientas</h3>
+        <div class="skills-list">
+          {profile.skills.tools.map(skill => (
+            <div class="skill-item">
+              <span class="skill-name">{skill}</span>
+              <span class="skill-level">Experto</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div class="skills-category fade-in">
+        <h3 class="category-title">Soft Skills</h3>
+        <div class="skills-list">
+          {profile.skills.soft.map(skill => (
+            <div class="skill-item">
+              <span class="skill-name">{skill}</span>
+              <span class="skill-level">Excelente</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <span class="stat-number">{profile.stats.projects}</span>
+        <span class="stat-label">Proyectos Completados</span>
+      </div>
+      
+      <div class="stat-item fade-in">
+        <span class="stat-number">{profile.stats.experience}</span>
+        <span class="stat-label">Años de Experiencia</span>
+      </div>
+      
+      <div class="stat-item fade-in">
+        <span class="stat-number">{profile.stats.skills}</span>
+        <span class="stat-label">Habilidades Técnicas</span>
+      </div>
+      
+      <div class="stat-item fade-in">
+        <span class="stat-number">{profile.stats.certifications}</span>
+        <span class="stat-label">Certificaciones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @import '../styles/components/skills.css';
+</style>
