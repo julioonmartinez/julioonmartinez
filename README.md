@@ -261,9 +261,9 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 
 ## 📞 Contacto
 
-- **Email**: julio.martinez@email.com
-- **LinkedIn**: [juliomartinez](https://linkedin.com/in/juliomartinez)
-- **GitHub**: [juliomo89](https://github.com/juliomo89)
+- **Email**: julioonmartinez@gmail.com
+- **LinkedIn**: [julioonmartinez](https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/)
+- **GitHub**: [julioonmartinez](https://github.com/julioonmartinez)
 
 ---
 
