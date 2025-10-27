@@ -38,13 +38,13 @@ export interface Profile {
 
 export const profile: Profile = {
   name: 'Julio Martínez',
-  role: 'Administrador de Empresas',
-  tagline: 'Optimizando procesos y liderando equipos hacia la excelencia operativa',
-  bio: '+5 años de experiencia. Administrador de Empresas especializado en gestión operativa, optimización de procesos y análisis de datos. Apasionado por la eficiencia y la mejora continua.',
+  role: 'Data Analyst & BI Specialist', 
+  tagline: 'Using Data to Optimize Processes and Drive Operational Excellence',
+  bio: '+5 years of experience. Business Administrator specializing in operational management, process optimization, and data analysis. Passionate about efficiency, continuous improvement, and transforming data into business insights.',
   email: 'juliomo89@outlook.com',
-  location: 'Zamora, Michoacán, México',
+  location: 'CDMX, Mexico',
   avatar: '/images/avatar.jpg',
-  resume: '/resume.pdf',
+  resume: '/Julio Martinez_Resume_EN.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/',
     github: 'https://github.com/julioonmartinez',
@@ -52,34 +52,35 @@ export const profile: Profile = {
   },
   skills: {
     technical: [
-      'Gestión Operativa',
-      'Control Administrativo',
-      'Auditorías Internas',
-      'Análisis de Datos',
-      'Reportes Estratégicos',
-      'Optimización de Procesos',
-      'Gestión de Calidad',
-      'Planificación Estratégica'
+      'Data Analysis',
+      'Strategic Reporting',
+      'Process Optimization',
+      'Operational Management',
+      'Internal Audits',
+      'Administrative Control',
+      'Quality Management',
+      'Strategic Planning'
     ],
     tools: [
-      'Excel Avanzado',
       'Power BI',
       'Tableau',
       'Python',
+      'Advanced Excel',
+      'DAX', 
       'SAP',
-      'Microsoft Office Suite',
       'ERP Systems',
+      'Microsoft Office Suite',
       'Business Intelligence'
     ],
     soft: [
-      'Liderazgo de Equipos',
-      'Comunicación Efectiva',
-      'Resolución de Problemas',
-      'Pensamiento Analítico',
-      'Orientación a Resultados',
-      'Gestión del Cambio',
-      'Negociación',
-      'Trabajo en Equipo'
+      'Analytical Thinking',
+      'Problem Solving',
+      'Effective Communication',
+      'Team Leadership',
+      'Results-Oriented',
+      'Change Management',
+      'Negotiation',
+      'Teamwork'
     ]
   },
   stats: {
@@ -92,41 +93,53 @@ export const profile: Profile = {
     {
       id: 'goldberry',
       company: 'Distribuidora Goldberry',
-      position: 'Jefe Administrativo',
+      position: 'Administrative Coordinator', 
       location: 'Zamora, Michoacán',
-      startDate: 'Enero 2019',
-      endDate: 'Enero 2025',
+      startDate: 'Jan 2019',
+      endDate: 'Jan 2025',
       description: [
-        'Diseñé e implementé controles administrativos para la gestión de productos perecederos, reduciendo pérdidas.',
-        'Organicé y optimicé actividades diarias del personal operativo, mejorando la eficiencia general.',
-        'Lideré el equipo de recepción y logística, mejorando el flujo de mercancías y reduciendo retrasos.',
-        'Desarrollé reportes agrícolas mediante herramientas de visualización para el seguimiento de objetivos estratégicos.'
+        'Implemented new controls to reduce losses in perishable goods.',
+        'Managed purchase orders and goods reception, ensuring continuous warehouse operations.',
+        'Streamlined supplier management and cost tracking processes to improve profitability.',
       ]
     },
     {
       id: 'bat-jefe',
-      company: 'British American Tobacco México',
-      position: 'Jefe Operativo',
+      company: 'British American Tobacco Mexico',
+      position: 'Operations Lead',
       location: 'Zamora, Michoacán',
-      startDate: 'Febrero 2017',
-      endDate: 'Enero 2019',
+      startDate: 'Feb 2017',
+      endDate: 'Jan 2019',
       description: [
-        'Supervisé procesos operativos y administrativos, asegurando cumplimiento de políticas internas.',
-        'Realicé auditorías preventivas, logrando la menor tasa de abusos de confianza en la región.',
-        'Coordiné respuestas a solicitudes del corporativo y gestioné acciones correctivas.'
+        'Supervised operational and administrative processes, using data analysis to ensure compliance with internal policies.',
+        'Conducted preventive audits by analyzing sales and operational data, identifying risk patterns to achieve the lowest rate of trust abuses in the region.',
+        'Managed corporate requests by providing detailed operational analysis and implementing data-backed corrective actions.'
       ]
     },
     {
-      id: 'bat-analista',
-      company: 'British American Tobacco México',
-      position: 'Analista Operativo',
+      id: 'bat-analyst',
+      company: 'British American Tobacco Mexico',
+      position: 'Operations Analyst',
       location: 'Guadalajara, Jalisco',
       startDate: 'Sep 2016',
-      endDate: 'Febrero 2017',
+      endDate: 'Feb 2017',
       description: [
-        'Ejecuté auditorías a equipos de ventas y distribuidores para validar cumplimiento de lineamientos.',
-        'Gestión de operaciones logísticas en centros de distribución (CEDIS).'
+        'Executed audits on sales teams and distributors, analyzing performance data and route compliance to validate guidelines.',
+        'Analyzed logistical operations within distribution centers (CEDIS) to identify and report on process inefficiencies.'
+      ]
+    },
+    {
+      id: 'deloitte-analyst',
+      company: 'British American Tobacco Mexico',
+      position: 'Operations Analyst',
+      location: 'Guadalajara, Jalisco',
+      startDate: 'Sep 2016',
+      endDate: 'Feb 2017',
+      description: [
+        'Led internal audits across multiple industries (retail, finance, healthcare), ensuring full compliance with corporate policies and regulations.',
+        'Strengthened internal controls and standardized procedures by identifying operational risks and implementing corrective actions across various business environments.'
       ]
     }
+
   ]
 };

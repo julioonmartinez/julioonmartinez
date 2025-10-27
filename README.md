@@ -1,189 +1,189 @@
-# 🚀 Julio Martínez - CV Profesional Data Scientist
+# 🚀 Julio Martínez - Professional Data Scientist CV
 
-Un website personal moderno y profesional construido con **Astro** y **TypeScript**, diseñado para presentar mi perfil como Data Scientist.
+A modern and professional personal website built with **Astro** and **TypeScript**, designed to showcase my profile as a Data Scientist.
 
-## ✨ Características
+## ✨ Features
 
-- 🎨 **Diseño Moderno**: UI limpia y profesional con colores inspirados en LinkedIn
-- 📱 **Responsive**: Mobile-first design con breakpoints optimizados
-- ⚡ **Performance**: Astro para máxima velocidad y SEO
-- 🎭 **Animaciones**: Microinteracciones sutiles y profesionales
-- ♿ **Accesible**: Cumple estándares AA/AAA de contraste
-- 🔧 **TypeScript**: Código tipado y mantenible
-- 🎯 **SEO Optimizado**: Meta tags, Open Graph y estructura semántica
+- 🎨 **Modern Design**: Clean and professional UI with colors inspired by LinkedIn
+- 📱 **Responsive**: Mobile-first design with optimized breakpoints
+- ⚡ **Performance**: Astro for maximum speed and SEO
+- 🎭 **Animations**: Subtle and professional micro-interactions
+- ♿ **Accessible**: Meets AA/AAA contrast standards
+- 🔧 **TypeScript**: Typed and maintainable code
+- 🎯 **SEO Optimized**: Meta tags, Open Graph and semantic structure
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 
 - **Framework**: [Astro](https://astro.build) (v5.13.2)
-- **Lenguaje**: TypeScript
-- **Estilos**: CSS puro con variables CSS
-- **Deploy**: Vercel, Netlify, o cualquier hosting estático
+- **Language**: TypeScript
+- **Styles**: Pure CSS with CSS variables
+- **Deploy**: Vercel, Netlify, or any static hosting
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### Prerrequisitos
+### Prerequisites
 
-- Node.js 18+ 
-- npm o yarn
+- Node.js 18+
+- npm or yarn
 
-### Pasos
+### Steps
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
    ```bash
-   git clone <tu-repositorio>
+   git clone <your-repository>
    cd juliomo89
    ```
 
-2. **Instalar dependencias**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Ejecutar en desarrollo**
+3. **Run in development**
    ```bash
    npm run dev
    ```
 
-4. **Abrir en el navegador**
+4. **Open in browser**
    ```
    http://localhost:4321
    ```
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 juliomo89/
-├── public/                 # Archivos estáticos
-│   ├── images/            # Imágenes del proyecto
+├── public/                 # Static files
+│   ├── images/            # Project images
 │   ├── resume.pdf         # CV mock
-│   └── favicon.svg        # Favicon personalizado
+│   └── favicon.svg        # Custom favicon
 ├── src/
-│   ├── components/        # Componentes reutilizables
-│   ├── data/             # Datos mock del perfil
-│   ├── layouts/          # Layouts de página
-│   ├── pages/            # Páginas de la aplicación
-│   └── styles/           # Estilos CSS organizados
-├── astro.config.mjs      # Configuración de Astro
-├── package.json           # Dependencias y scripts
-└── tsconfig.json         # Configuración de TypeScript
+│   ├── components/        # Reusable components
+│   ├── data/             # Profile mock data
+│   ├── layouts/          # Page layouts
+│   ├── pages/            # Application pages
+│   └── styles/           # Organized CSS styles
+├── astro.config.mjs      # Astro configuration
+├── package.json           # Dependencies and scripts
+└── tsconfig.json         # TypeScript configuration
 ```
 
-## 🎨 Personalización
+## 🎨 Customization
 
-### Colores
+### Colors
 
-Los colores se definen en `src/styles/variables.css`:
+Colors are defined in `src/styles/variables.css`:
 
 ```css
 :root {
-  --color-primary: #0A66C2;    /* Azul LinkedIn */
-  --color-accent: #00B4D8;     /* Cian suave */
-  --color-dark: #0F172A;       /* Gris oscuro */
-  --color-light: #F8FAFC;      /* Blanco sucio */
+  --color-primary: #0A66C2;    /* LinkedIn Blue */
+  --color-accent: #00B4D8;     /* Soft Cyan */
+  --color-dark: #0F172A;       /* Dark Gray */
+  --color-light: #F8FAFC;      /* Off White */
 }
 ```
 
-### Perfil Personal
+### Personal Profile
 
-Edita `src/data/profile.ts` para cambiar:
+Edit `src/data/profile.ts` to change:
 
-- Nombre y rol
-- Bio y descripción
-- Enlaces sociales
-- Habilidades técnicas
-- Estadísticas
+- Name and role
+- Bio and description
+- Social links
+- Technical skills
+- Statistics
 
-### Proyectos
+### Projects
 
-Modifica `src/data/projects.ts` para:
+Modify `src/data/projects.ts` to:
 
-- Agregar/editar proyectos
-- Cambiar descripciones
-- Actualizar enlaces
-- Modificar skills
+- Add/edit projects
+- Change descriptions
+- Update links
+- Modify skills
 
-### Imágenes
+### Images
 
-**Reemplaza las imágenes placeholder:**
+**Replace the placeholder images:**
 
 1. **Avatar**: `public/images/avatar.jpg`
-   - Recomendado: Foto profesional 300x300px
-   - Formato: JPG, PNG o WebP
+   - Recommended: Professional photo 300x300px
+   - Format: JPG, PNG or WebP
 
-2. **Proyectos**: `public/images/project-1.jpg` a `project-4.jpg`
-   - Recomendado: 800x600px
-   - Temas sugeridos:
+2. **Projects**: `public/images/project-1.jpg` to `project-4.jpg`
+   - Recommended: 800x600px
+   - Suggested themes:
      - `project-1.jpg`: Data visualization, charts
      - `project-2.jpg`: Healthcare, medical dashboards
      - `project-3.jpg`: Business analytics, pipelines
      - `project-4.jpg`: BI dashboards, KPIs
 
 3. **Open Graph**: `public/images/og-image.jpg`
-   - Recomendado: 1200x630px
-   - Banner con nombre y rol
+   - Recommended: 1200x630px
+   - Banner with name and role
 
-**Obtener imágenes reales:**
-- [Unsplash](https://unsplash.com) - Fotos gratuitas de alta calidad
-- [Pexels](https://pexels.com) - Imágenes libres de derechos
-- [Pixabay](https://pixabay.com) - Recursos visuales gratuitos
+**Get real images:**
+- [Unsplash](https://unsplash.com) - High-quality free photos
+- [Pexels](https://pexels.com) - Royalty-free images
+- [Pixabay](https://pixabay.com) - Free visual resources
 
-## 📱 Scripts Disponibles
+## 📱 Available Scripts
 
 ```bash
-npm run dev      # Servidor de desarrollo
-npm run build    # Build para producción
-npm run preview  # Preview del build
+npm run dev      # Development server
+npm run build    # Production build
+npm run preview  # Preview the build
 ```
 
-## 🚀 Despliegue
+## 🚀 Deployment
 
-### Vercel (Recomendado)
+### Vercel (Recommended)
 
-1. **Conectar repositorio**
-   - Ve a [vercel.com](https://vercel.com)
-   - Importa tu repositorio de GitHub
-   - Vercel detectará automáticamente Astro
+1. **Connect repository**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Vercel will automatically detect Astro
 
-2. **Configuración automática**
+2. **Automatic configuration**
    - Build Command: `npm run build`
    - Output Directory: `dist`
    - Install Command: `npm install`
 
 ### Netlify
 
-1. **Conectar repositorio**
-   - Ve a [netlify.com](https://netlify.com)
+1. **Connect repository**
+   - Go to [netlify.com](https://netlify.com)
    - "New site from Git"
-   - Selecciona tu repositorio
+   - Select your repository
 
-2. **Configuración**
+2. **Configuration**
    - Build command: `npm run build`
    - Publish directory: `dist`
 
 ### GitHub Pages
 
-1. **Configurar GitHub Actions**
-   - Crea `.github/workflows/deploy.yml`
-   - Usa la acción `peaceiris/actions-gh-pages`
+1. **Configure GitHub Actions**
+   - Create `.github/workflows/deploy.yml`
+   - Use the `peaceiris/actions-gh-pages` action
 
-2. **Habilitar Pages**
+2. **Enable Pages**
    - Settings > Pages
    - Source: GitHub Actions
 
-## 🔧 Configuración Avanzada
+## 🔧 Advanced Configuration
 
-### Variables de Entorno
+### Environment Variables
 
-Crea `.env` para configuraciones locales:
+Create `.env` for local configurations:
 
 ```env
-PUBLIC_SITE_URL=https://tudominio.com
+PUBLIC_SITE_URL=https://yourdomain.com
 PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
 ### Analytics
 
-Para Google Analytics, agrega en `Layout.astro`:
+For Google Analytics, add to `Layout.astro`:
 
 ```html
 <!-- Google Analytics -->
@@ -196,29 +196,29 @@ Para Google Analytics, agrega en `Layout.astro`:
 </script>
 ```
 
-### Formulario de Contacto
+### Contact Form
 
-El formulario actual es solo frontend. Para funcionalidad real:
+The current form is frontend only. For real functionality:
 
-1. **EmailJS** (Fácil de implementar)
-2. **Formspree** (Sin backend)
-3. **Netlify Forms** (Con Netlify)
-4. **API personalizada** (Node.js, Python, etc.)
+1. **EmailJS** (Easy to implement)
+2. **Formspree** (No backend)
+3. **Netlify Forms** (With Netlify)
+4. **Custom API** (Node.js, Python, etc.)
 
 ## 📊 Performance
 
-- **Lighthouse Score**: 95+ en todas las métricas
+- **Lighthouse Score**: 95+ on all metrics
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
 
 ## 🎯 SEO
 
-- Meta tags optimizados
-- Open Graph para redes sociales
-- Estructura semántica HTML5
-- Sitemap automático
-- Robots.txt configurado
+- Optimized meta tags
+- Open Graph for social networks
+- HTML5 semantic structure
+- Automatic sitemap
+- Configured robots.txt
 
 ## 🐛 Troubleshooting
 
@@ -235,31 +235,31 @@ npm install
 npm run dev -- --port 3001
 ```
 
-### Build falla en producción
+### Build fails in production
 
 ```bash
 npm run build --verbose
 ```
 
-## 🤝 Contribuciones
+## 🤝 Contributions
 
-1. Fork el proyecto
-2. Crea una rama (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
+This project is under the MIT License. See `LICENSE` for more details.
 
-## 🙏 Agradecimientos
+## 🙏 Acknowledgments
 
-- [Astro](https://astro.build) por el framework increíble
-- [Inter Font](https://rsms.me/inter/) por la tipografía
-- [Heroicons](https://heroicons.com) por los iconos SVG
+- [Astro](https://astro.build) for the amazing framework
+- [Inter Font](https://rsms.me/inter/) for the typography
+- [Heroicons](https://heroicons.com) for the SVG icons
 
-## 📞 Contacto
+## 📞 Contact
 
 - **Email**: julioonmartinez@gmail.com
 - **LinkedIn**: [julioonmartinez](https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/)
@@ -267,4 +267,4 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 
 ---
 
-⭐ **Si este proyecto te ayuda, dale una estrella en GitHub!**
+⭐ **If this project helps you, give it a star on GitHub!**
