@@ -21,6 +21,7 @@ export interface Profile {
     linkedin: string;
     github: string;
     twitter?: string;
+    whatsapp?: string;
   };
   skills: {
     technical: string[];
@@ -42,13 +43,14 @@ export const profile: Profile = {
   tagline: 'Using Data to Optimize Processes and Drive Operational Excellence',
   bio: '+5 years of experience. Business Administrator specializing in operational management, process optimization, and data analysis. Passionate about efficiency, continuous improvement, and transforming data into business insights.',
   email: 'juliomo89@outlook.com',
-  location: 'CDMX, Mexico',
+  location: 'Zamora, Michoacán, México',
   avatar: '/images/avatar.jpg',
   resume: '/Julio Martinez_Resume_EN.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/',
     github: 'https://github.com/julioonmartinez',
-    twitter: 'https://x.com/Julioonmartinez'
+    twitter: 'https://x.com/Julioonmartinez',
+    whatsapp: 'https://wa.me/521234567890'
   },
   skills: {
     technical: [
@@ -90,13 +92,26 @@ export const profile: Profile = {
     certifications: 6
   },
   experience: [
+    // {
+    //   id: 'Freelance',
+    //   company: "Self-Employed", 
+    //   position: 'Freelance Data Analyst & BI Specialist', 
+    //   location: 'Zamora, Michoacán',
+    //   startDate: 'Sep 2019',
+    //   endDate: 'Jan 2025',
+    //   description: [
+    //    'Developed informational and commercial websites for small businesses.',
+    //    'Created dashboards and reports using Power BI and Tableau to help clients visualize and understand their data for better decision-making.',
+    //    'Provided data analysis services to identify trends, optimize operations, and improve business performance for various clients.'
+    //   ]
+    // },
     {
       id: 'goldberry',
       company: 'Distribuidora Goldberry',
       position: 'Administrative Coordinator', 
-      location: 'Zamora, Michoacán',
+      location: 'CDMX | Michoacán',
       startDate: 'Jan 2019',
-      endDate: 'Jan 2025',
+      endDate: 'Sep 2025',
       description: [
         'Implemented new controls to reduce losses in perishable goods.',
         'Managed purchase orders and goods reception, ensuring continuous warehouse operations.',
@@ -109,7 +124,7 @@ export const profile: Profile = {
       position: 'Operations Lead',
       location: 'Zamora, Michoacán',
       startDate: 'Feb 2017',
-      endDate: 'Jan 2019',
+      endDate: 'Nov 2019',
       description: [
         'Supervised operational and administrative processes, using data analysis to ensure compliance with internal policies.',
         'Conducted preventive audits by analyzing sales and operational data, identifying risk patterns to achieve the lowest rate of trust abuses in the region.',

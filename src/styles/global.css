@@ -124,6 +124,18 @@ a:hover {
   transform: scale(1.02);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  color: white;
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
 /* Layout */
 .container {
   width: 100%;

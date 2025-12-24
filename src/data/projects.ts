@@ -11,6 +11,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+  id: 'FluxBI',
+  title: 'Flux BI: Next-Gen Self-Service Analytics',
+  description: 'A robust web platform for transforming raw data into actionable insights through interactive visualizations.',
+  summary: 'A powerful business intelligence tool designed for speed and autonomy. Flux BI streamlines the data journey: simply import your datasets, explore them with advanced visualization tools, and build comprehensive dashboards in minutes. Currently optimized for individual high-performance analysis and rapid prototyping.',
+  skills: ['Astro', 'Data Visualization', 'SQL', 'Business Intelligence', 'Web Development', 'Product Design'],
+  image: '/images/project-flux-bi.webp',
+  kpi: 'Zero-Latency Analysis',
+  demo: 'https://flux-beta.vercel.app/'
+},
  {
   id: 'ai-job-market-analysis',
   title: "AI's Impact on the Job Market (2024–2030)",
@@ -31,6 +41,16 @@ export const projects: Project[] = [
   image: '/images/project-data-post.webp',
   kpi: 'Dashboards in 2 Minutes',
   demo: 'https://datapost70.vercel.app/'
+},
+{
+  id: 'FluxBI',
+  title: 'Flux BI: Next-Gen Self-Service Analytics',
+  description: 'A robust web platform for transforming raw data into actionable insights through interactive visualizations.',
+  summary: 'A powerful business intelligence tool designed for speed and autonomy. Flux BI streamlines the data journey: simply import your datasets, explore them with advanced visualization tools, and build comprehensive dashboards in minutes. Currently optimized for individual high-performance analysis and rapid prototyping.',
+  skills: ['Astro', 'Data Visualization', 'SQL', 'Business Intelligence', 'Web Development', 'Product Design'],
+  image: '/images/project-flux-bi.webp',
+  kpi: 'Zero-Latency Analysis',
+  demo: 'https://flux-beta.vercel.app/'
 }
  
 
