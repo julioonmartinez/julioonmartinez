@@ -1,5 +1,5 @@
 ---
-import { profile } from '../data/profile';
+import { profile } from "../data/profile";
 ---
 
 <section class="skills-section section">
@@ -8,41 +8,44 @@ import { profile } from '../data/profile';
       <h2>Skills and Competencies</h2>
       <p class="section-subtitle">Technologies and tools I master</p>
     </div>
-    
+
     <div class="skills-grid">
       <div class="skills-category fade-in">
         <h3 class="category-title">Technical</h3>
         <div class="skills-list">
-          {profile.skills.technical.map(skill => (
-            <div class="skill-item">
-              <span class="skill-name">{skill}</span>
-              <span class="skill-level">Advanced</span>
-            </div>
-          ))}
+          {
+            profile.skills.technical.map((skill) => (
+              <div class="skill-item">
+                <span class="skill-name">{skill}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
-      
+
       <div class="skills-category fade-in">
         <h3 class="category-title">Tools</h3>
         <div class="skills-list">
-          {profile.skills.tools.map(skill => (
-            <div class="skill-item">
-              <span class="skill-name">{skill}</span>
-              <span class="skill-level">Expert</span>
-            </div>
-          ))}
+          {
+            profile.skills.tools.map((skill) => (
+              <div class="skill-item">
+                <span class="skill-name">{skill}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
-      
+
       <div class="skills-category fade-in">
         <h3 class="category-title">Soft Skills</h3>
         <div class="skills-list">
-          {profile.skills.soft.map(skill => (
-            <div class="skill-item">
-              <span class="skill-name">{skill}</span>
-              <span class="skill-level">Excellent</span>
-            </div>
-          ))}
+          {
+            profile.skills.soft.map((skill) => (
+              <div class="skill-item">
+                <span class="skill-name">{skill}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -56,17 +59,17 @@ import { profile } from '../data/profile';
         <span class="stat-number">{profile.stats.projects}</span>
         <span class="stat-label">Completed Projects</span>
       </div>
-      
+
       <div class="stat-item fade-in">
         <span class="stat-number">{profile.stats.experience}</span>
         <span class="stat-label">Years of Experience</span>
       </div>
-      
+
       <div class="stat-item fade-in">
         <span class="stat-number">{profile.stats.skills}</span>
         <span class="stat-label">Technical Skills</span>
       </div>
-      
+
       <div class="stat-item fade-in">
         <span class="stat-number">{profile.stats.certifications}</span>
         <span class="stat-label">Certifications</span>
@@ -76,5 +79,5 @@ import { profile } from '../data/profile';
 </section>
 
 <style>
-  @import '../styles/components/skills.css';
+  @import "../styles/components/skills.css";
 </style>

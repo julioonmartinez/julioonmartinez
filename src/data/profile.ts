@@ -39,13 +39,13 @@ export interface Profile {
 
 export const profile: Profile = {
   name: 'Julio Martínez',
-  role: 'Data Analyst & BI Specialist', 
+  role: 'Data Analyst & BI Specialist',
   tagline: 'Using Data to Optimize Processes and Drive Operational Excellence',
   bio: '+5 years of experience. Business Administrator specializing in operational management, process optimization, and data analysis. Passionate about efficiency, continuous improvement, and transforming data into business insights.',
   email: 'juliomo89@outlook.com',
   location: 'Zamora, Michoacán, México',
   avatar: '/images/avatar.jpg',
-  resume: '/Julio Martinez_Resume_EN.pdf',
+  resume: '/CV_Julio_Cesar_Martinez_2026_EN.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/',
     github: 'https://github.com/julioonmartinez',
@@ -68,7 +68,7 @@ export const profile: Profile = {
       'Tableau',
       'Python',
       'Advanced Excel',
-      'DAX', 
+      'DAX',
       'SAP',
       'ERP Systems',
       'Microsoft Office Suite',
@@ -89,26 +89,26 @@ export const profile: Profile = {
     projects: 4,
     experience: 10,
     skills: 28,
-    certifications: 6
+    certifications: 1
   },
   experience: [
-    // {
-    //   id: 'Freelance',
-    //   company: "Self-Employed", 
-    //   position: 'Freelance Data Analyst & BI Specialist', 
-    //   location: 'Zamora, Michoacán',
-    //   startDate: 'Sep 2019',
-    //   endDate: 'Jan 2025',
-    //   description: [
-    //    'Developed informational and commercial websites for small businesses.',
-    //    'Created dashboards and reports using Power BI and Tableau to help clients visualize and understand their data for better decision-making.',
-    //    'Provided data analysis services to identify trends, optimize operations, and improve business performance for various clients.'
-    //   ]
-    // },
+    {
+      id: 'paricina',
+      company: "Paricina",
+      position: 'Administrative Assistant Manager',
+      location: 'Zamora, Michoacán',
+      startDate: 'Dic 2025',
+      endDate: 'Present',
+      description: [
+        'Financial Management: End-to-end responsibility for cash counts, bank deposits, and vendor reconciliations.',
+        'BI Project: Implemented performance dashboards to establish a goal-oriented work culture (KPIs).'
+      ]
+    },
+
     {
       id: 'goldberry',
       company: 'Distribuidora Goldberry',
-      position: 'Administrative Coordinator', 
+      position: 'Administrative Coordinator',
       location: 'CDMX | Michoacán',
       startDate: 'Jan 2019',
       endDate: 'Sep 2025',
