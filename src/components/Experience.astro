@@ -1,44 +1,51 @@
 ---
-import { profile } from '../data/profile';
-import '../styles/components/experience.css';
+import { profile } from "../data/profile";
+import "../styles/components/experience.css";
 ---
 
 <section class="experience">
   <div class="container">
     <div class="experience-header">
       <h2 class="section-title">Professional Experience</h2>
-      <p class="section-subtitle">My professional career in administration and operational management</p>
+      <p class="section-subtitle">
+        My professional career in administration and operational management
+      </p>
     </div>
-    
+
     <div class="experience-timeline">
-      {profile.experience.map((exp, index) => (
-        <div class="experience-item">
-          <div class="experience-marker">
-            <div class="marker-dot"></div>
-            {index < profile.experience.length - 1 && <div class="marker-line"></div>}
-          </div>
-          
-          <div class="experience-content">
-            <div class="experience-header-info">
-              <h3 class="company-name">{exp.company}</h3>
-              <span class="experience-period">{exp.startDate} – {exp.endDate}</span>
+      {
+        profile.experience.map((exp, index) => (
+          <div class="experience-item">
+            <div class="experience-marker">
+              <div class="marker-dot" />
+              {index < profile.experience.length - 1 && (
+                <div class="marker-line" />
+              )}
             </div>
-            
-            <div class="position-info">
-              <h4 class="position-title">{exp.position}</h4>
-              <span class="location">{exp.location}</span>
+
+            <div class="experience-content">
+              <div class="experience-header-info">
+                <div class="position-info">
+                  <h3 class="position-title">{exp.position}</h3>
+                  <h4 class="company-name">
+                    {exp.company}
+                    <span class="location">{exp.location}</span>
+                  </h4>
+                </div>
+                <span class="experience-period">
+                  {exp.startDate} – {exp.endDate}
+                </span>
+              </div>
+
+              <ul class="experience-description">
+                {exp.description.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
             </div>
-            
-            <ul class="experience-description">
-              {exp.description.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
-
-
