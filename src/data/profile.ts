@@ -50,7 +50,7 @@ export const profile: Profile = {
     linkedin: 'https://www.linkedin.com/in/julio-cesar-martinez-ortega-515690319/',
     github: 'https://github.com/julioonmartinez',
     twitter: 'https://x.com/Julioonmartinez',
-    whatsapp: 'https://wa.me/521234567890'
+    whatsapp: 'https://wa.me/523513470978'
   },
   skills: {
     technical: [
@@ -93,8 +93,8 @@ export const profile: Profile = {
   },
   experience: [
     {
-      id: 'paricina',
-      company: "Paricina",
+      id: 'parisina',
+      company: "Parisina",
       position: 'Administrative Assistant Manager',
       location: 'Zamora, Michoacán',
       startDate: 'Dic 2025',
